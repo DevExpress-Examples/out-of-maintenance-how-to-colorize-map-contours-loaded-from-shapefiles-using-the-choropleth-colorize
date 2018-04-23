@@ -1,0 +1,45 @@
+﻿<Window x:Class="MapColorizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxm="http://schemas.devexpress.com/winfx/2008/xaml/map"
+        Title="MainWindow" Height="412" Width="596" >
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <dxm:ChoroplethColorizer x:Key="gdpColorizer" 
+                                         RangeStops="0 3000 10000 18000 28000 44000 82000 185000 1000000 2500000 15000000">
+                <dxm:ChoroplethColorizer.Colors>
+                    <Color>#5F8B95</Color>
+                    <Color>#799689</Color>
+                    <Color>#A2A875</Color>
+                    <Color>#CEBB5F</Color>
+                    <Color>#F2CB4E</Color>
+                    <Color>#F1C149</Color>
+                    <Color>#E5A84D</Color>
+                    <Color>#D6864E</Color>
+                    <Color>#C56450</Color>
+                    <Color>#BA4D51</Color>
+                </dxm:ChoroplethColorizer.Colors>
+                <dxm:ChoroplethColorizer.ValueProvider>
+                    <dxm:ShapeAttributeValueProvider AttributeName="GDP_MD_EST" />
+                </dxm:ChoroplethColorizer.ValueProvider>
+                <dxm:ChoroplethColorizer.Legend>
+                    <dxm:ColorScaleLegend  Header="GDP by Countries" Description="In US dollars" 
+                                                   RangeStopsFormat="0,B" MinWidth="350"  />
+                </dxm:ChoroplethColorizer.Legend>
+            </dxm:ChoroplethColorizer>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <dxm:MapControl  Colorizer="{StaticResource gdpColorizer}">
+            <dxm:MapControl.Layers>
+                <dxm:VectorLayer>
+                    <dxm:VectorLayer.ShapeLoader>
+                        <dxm:ShapefileLoader  FileUri="/MapColorizer;component/Data/Countries.shp"/>
+                    </dxm:VectorLayer.ShapeLoader>
+                </dxm:VectorLayer>
+            </dxm:MapControl.Layers>
+        </dxm:MapControl>
+    </Grid>
+</Window>
