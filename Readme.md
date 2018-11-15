@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* **[MainWindow.xaml](./CS/Wpf_MapControl_ChoroplethColorizer/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/Wpf_MapControl_ChoroplethColorizer/MainWindow.xaml))**
+<!-- default file list end -->
 # How to colorize map contours loaded from Shapefiles using the Choropleth colorizer
 
 
