@@ -3,7 +3,7 @@
 
 * [ColorGenerator.cs](./CS/CustomMapColorizer/ColorGenerator.cs) (VB: [ColorGenerator.vb](./VB/CustomMapColorizer/ColorGenerator.vb))
 * [MainWindow.xaml](./CS/CustomMapColorizer/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/CustomMapColorizer/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/CustomMapColorizer/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/CustomMapColorizer/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/CustomMapColorizer/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/CustomMapColorizer/MainWindow.xaml.vb))
 * [RangeColor.cs](./CS/CustomMapColorizer/RangeColor.cs) (VB: [RangeColor.vb](./VB/CustomMapColorizer/RangeColor.vb))
 <!-- default file list end -->
 # How to colorize map contours loaded from Shapefiles using the Choropleth colorizer
